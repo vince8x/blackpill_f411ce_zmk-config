@@ -142,7 +142,7 @@
 &kp A      &kp R     &lt FUN S    &lt NAV T    &kp G         &kp M            &lt SYM N        &lt NUM E     &kp I     &kp O
 &kp Z      &kp X     &kp C        &kp D        &kp V         &kp K            &kp H            &kp COMMA     &kp DOT   &kp FSLH
            &none     &none                                                                     &none         &none
-                                  &sl 1        &kp SPACE     &mt LSHIFT RET   &sk LCTRL
+                                  &mt LALT TAB        &mt LGUI SPACE     &mt LSHIFT RET   &mt LCTRL BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN
