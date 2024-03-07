@@ -9,11 +9,10 @@
 
 
 #define COLEMAK 0
-#define TAP 1
-#define NAV 3
-#define NUM 4
-#define SYM 5
-#define FUN 6
+#define NAV 1
+#define NUM 2
+#define SYM 3
+#define FUN 4
 
 &mt {
     flavor = "tap-preferred";
@@ -50,16 +49,6 @@
         }
     ;
 
-        tap_layer {
-            bindings = <
-                                                                             &trans             &trans
-&kp Q            &kp W                &kp F             &kp P                &kp B              &kp J            &kp L               &kp U           &kp Y           &kp APOS
-&kp A            &kp R                &kp S             &kp T                &kp G              &kp M            &kp N               &kp E           &kp I           &kp O
-&kp Z            &kp X                &kp C             &kp D                &kp V              &kp K            &kp H               &kp COMMA       &kp DOT         &kp FSLH
-                 &none                &kp ESC                                                                                        &kp DEL         &none
-                                                        &kp SPACE            &kp TAB            &kp RET          &kp BSPC
-            >;
-        };
         nav_layer {
             bindings = <
                                                                              &trans             &trans
