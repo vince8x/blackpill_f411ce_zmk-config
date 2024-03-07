@@ -66,8 +66,8 @@
 &kp K_UNDO       &kp LS(DEL)          &kp LC(INS)       &kp LS(INS)          &key_repeat        &key_repeat      &kp RS(INS)         &kp RC(INS)     &kp RS(DEL)     &kp K_UNDO
 &kp LMETA        &kp LALT             &kp LCTRL         &kp LSHFT            &none              &kp LEFT         &kp DOWN            &kp UP          &kp RIGHT       &mt CAPS
 &none            &mt LALT X           &kp C             &kp D                &kp V              &kp HOME         &kp PAGE_DOWN       &kp PAGE_UP     &kp END         &kp INS
-                 &none                &kp ESC                                                                                        &lt FUN DEL     &none
-                                                        &lt NAV SPACE        &lt MOUSE TAB      &lt SYM RET      &lt NUM BSPC
+                 &none                &none                                                                                          &kp DEL         &none
+                                                        &none                &none              &kp RET          &kp BSPC
             >;
         };
         num_layer {
@@ -77,8 +77,8 @@
 &kp Q            &kp W                &kp F             &kp P                &kp B              &kp J            &kp L               &kp U           &kp Y           &kp APOS
 &mt LMETA A      &mt LALT R           &mt LCTRL S       &mt LSHFT T          &kp G              &kp M            &mt RSHFT N         &mt RCTRL E     &mt RALT I      &mt RMETA O
 &kp Z            &mt LALT X           &kp C             &kp D                &kp V              &kp K            &kp H               &kp COMMA       &mt RALT DOT    &kp FSLH
-                 &none                &kp ESC                                                                                        &lt FUN DEL     &none
-                                                        &lt NAV SPACE        &kp TAB            &lt SYM RET      &lt NUM BSPC
+                 &none                &kp DOT                                                                                        &none           &none
+                                                        &kp NUMBER_0         &kp MINUS          &none            &none
             >;
        };
 
@@ -88,8 +88,8 @@
 &kp LBRC         &kp AMPS             &kp STAR          &kp LPAR             &kp RBRC           &none            &kp L               &kp U           &kp Y           &kp APOS
 &kp COLON        &kp DLLR             &kp PERCENT       &kp CARET            &kp PLUS           &none            &kp RSHFT           &kp RCTRL       &kp RALT        &kp RMETA
 &kp TILDE        &kp EXCL             &kp AT            &kp POUND            &kp PIPE           &none            &kp LBKT            &kp RBKT        &kp LPAR        &kp RPAR 
-                 &none                &kp ESC                                                                                        &lt FUN DEL     &none
-                                                        &lt NAV SPACE        &kp TAB      &lt SYM RET      &lt NUM BSPC
+                 &none                &kp LBKT                                                                                       &none           &none
+                                                        &kp RBKT             &kp UNDER          &none            &none
             >;
         };
 
@@ -99,8 +99,8 @@
 &kp F12          &kp F7               &kp F8            &kp F9               &kp SYSREQ         &none            &kp L               &kp U           &kp Y           &kp APOS
 &kp F11          &kp F4               &kp F5            &kp F6               &kp SLCK           &kp M            &mt RSHFT N         &mt RCTRL E     &mt RALT I      &mt RMETA O
 &kp F10          &kp F1               &kp F2            &kp F3               &kp PAUSE_BREAK    &kp K            &kp H               &kp COMMA       &mt RALT DOT    &kp FSLH
-                 &none                &kp ESC                                                                                        &lt FUN DEL     &none
-                                                        &kp SPACE            &kp TAB            &kp RET          &kp BSPC
+                 &none                &kp ESC                                                                                        &none           &none
+                                                        &kp SPACE            &none              &none            &none
             >;
         };
     };
