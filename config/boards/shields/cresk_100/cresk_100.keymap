@@ -7,12 +7,21 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/ext_power.h>
+#ifdef EXTERNAL_POWER
+#    include <dt-bindings/zmk/ext_power.h>
+#endif
 
 #define COLEMAK 0
 #define NAV 1
 #define NUM 2
 #define SYM 3
-#define FUN 4
+
+&caps_word {
+    continue-list = <UNDERSCORE MINUS BACKSPACE>;
+};
 
 &mt {
     flavor = "tap-preferred";
@@ -30,6 +39,30 @@
 };
 
 / {
+    behaviors {
+        skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_KEY_QUICK_RELEASE";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-release;
+        };
+    };
+
+    combos {
+        combo_gm_capsword {
+            layers = <0 1 2 3>;
+            timeout-ms = <100>;
+            // G + M
+            key-positions = <16 17>;
+            bindings = <&caps_word>;
+        };
+    };
+};
+
+/ {
+
 
     keymap {
         compatible = "zmk,keymap";
@@ -40,7 +73,7 @@
 &kp Q            &kp W                &kp F             &kp P                &kp B              &kp J            &kp L               &kp U           &kp Y           &kp APOS
 &mt LMETA A      &mt LALT R           &mt LCTRL S       &mt LSHFT T          &kp G              &kp M            &mt RSHFT N         &mt RCTRL E     &mt RALT I      &mt RMETA O
 &kp Z            &mt LALT X           &kp C             &kp D                &kp V              &kp K            &kp H               &kp COMMA       &mt RALT DOT    &kp FSLH
-                 &none                &kp ESC                                                                                        &lt FUN DEL     &none
+                 &none                &kp ESC                                                                                        &kp DEL     &none
                                                         &lt NAV SPACE        &kp TAB            &lt SYM RET      &lt NUM BSPC
             >;
 
