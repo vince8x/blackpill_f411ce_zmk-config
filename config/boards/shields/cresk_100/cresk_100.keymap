@@ -55,7 +55,7 @@
             layers = <0 1 2 3>;
             timeout-ms = <100>;
             // G + M
-            key-positions = <16 17>;
+            key-positions = <3 4>;
             bindings = <&caps_word>;
         };
     };
