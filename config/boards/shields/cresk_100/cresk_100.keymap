@@ -119,12 +119,9 @@
 };
 
 / {
-
-
     keymap {
         compatible = "zmk,keymap";
-
-        default_layer {
+        colemak_layer {
             bindings = <
                                                                              &kp C_MUTE         &none
 &kp Q            &kp W                &kp F             &kp P                &kp B              &kp J            &kp L               &kp U           &kp Y           &kp APOS
@@ -133,13 +130,10 @@
                  &none                &kp ESC                                                                                        &kp DEL         &none
                                                         &mo SYM              &kp SPACE          &kp RET          &mo NUM
             >;
-
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN
                                &inc_dec_kp PG_UP PG_DN>;
-        }
-    ;
-
-       sym_layer {
+        };
+        sym_layer {
             bindings = <
                                                                              &trans             &trans
 &none            &kp BSLH             &kp PRCNT         &kp DLLR             &none              &none            &kp CARET           &kp LBRC        &kp RBRC        &kp APOS
