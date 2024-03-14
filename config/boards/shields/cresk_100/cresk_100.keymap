@@ -21,7 +21,6 @@
 #define DANGER 5
 #define LCK 6
 
-#include "combos.dtsi"
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
@@ -55,11 +54,18 @@
     };
 
     combos {
-        combo_wf_shift {
+        combo_wf_tab {
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             // W + F
             key-positions = <3 4>;
+            bindings = <&kp TAB>;
+        };
+        combo_uy_shift {
+            layers = <0 1 2 3 4 5>;
+            timeout-ms = <100>;
+            // U + Y
+            key-positions = <9 10>;
             bindings = <&skq LSHFT>;
         };
         combo_gm_capsword {
@@ -71,48 +77,48 @@
         };
         combo_xc_ctrl {
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             // Z + X
-            key-positions = <26 27>;
+            key-positions = <23 24>;
             bindings = <&sk LCTL>;
         };
         combo_unlock {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             // (Z + SYM) + NAV (NUM + SFT)
             key-positions = <22 31 36 39>;
             bindings = <&tog LCK>;
         };
         combo_commadot_tab {
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             // , + . = shift
             key-positions = <29 30>;
             bindings = <&kp TAB>;
         };
         combo_opt {
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             // SYM + SPC = CMD
             key-positions = <38 30>;
             bindings = <&sk LCMD>;
         };
         combo_cmd {
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             // NUM + ENT = OPT
             key-positions = <36 37>;
             bindings = <&sk LALT>;
         };
         combo_bspc {
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
             // SPC + ENT = BSPC
             key-positions = <37 38>;
             bindings = <&kp BSPC>;
         };
         combo_wp_q {
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             // W + P = Q
             key-positions = <3 5>;
             bindings = <&kp Q>;
