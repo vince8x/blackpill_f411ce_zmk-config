@@ -180,42 +180,33 @@
             bindings = <
                                                                              &trans             &trans
 &none            &none                &none             &none                &none              &none            &none               &none           &none           &none
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFF      &rgb_ug RGB_BRI   &rgb_ug RGB_BRD      &none              &kp LEFT         &kp DOWN            &kp UP          &kp RIGHT       &trans
+&none            &none                &none             &none                &none              &kp LEFT         &kp DOWN            &kp UP          &kp RIGHT       &trans
 &none            &none                &none             &none                &none              &kp HOME         &kp PG_DN           &kp PG_UP       &kp END         &none
                  &none                &none                                                                                          &kp DEL         &none
                                                         &trans               &trans             &trans           &trans
             >;
         };
-
         danger_layer {
-// ---------------------------------------------------------------------------
-// |     |     |     |     |     |     | |     |     |     |     |     |     |
-// |     |     |     |     |     |     | |     |     |     |     |EP ON|     |
-// |     |_FUN_|     |     |     |     | |BTCLR|RESET|     |_!!!_|EPOFF|     |
-//                   |     |_SYM_|     | |     |     |     |
-                    // impactful buttons
-                    // Bluetooth clear, reset
-                    bindings = <
+            bindings = <
                                                                             &trans              &trans
 &none           &none               &none               &none               &none               &none           &none               &none               &none           &none
 &none           &none               &none               &none               &none               &none           &none               &none               &none           &ext_power EP_ON
 &trans          &none               &none               &none               &none               &bt BT_CLR      &reset              &none               &trans          &ext_power EP_OFF
                 &trans              &none                                                                                           &none               &none
                                                         &trans              &none               &none           &none
-                    >;
-                };
+            >;
+        };
         lock_layer {
                     // only way out is the combo Z + SYM + NUM + SFT
                     // other combos are disabled too
-                    bindings = <
+            bindings = <
                                                                             &trans              &trans
 &none           &none               &none               &none               &none               &none           &none               &none               &none           &none
 &none           &none               &none               &none               &none               &none           &none               &none               &none           &none
 &none           &none               &none               &none               &none               &none           &none               &none               &none           &none
                 &trans              &none                                                                                           &none               &none
                                                         &none              &none               &none           &none
-                    >;
-                };
-
+            >;
+        };
     };
 };
