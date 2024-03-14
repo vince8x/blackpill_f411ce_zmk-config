@@ -115,7 +115,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-        colemak_layer {
+        default_layer {
             bindings = <
                                                                              &kp C_MUTE         &none
 &kp Q            &kp W                &kp F             &kp P                &kp B              &kp J            &kp L               &kp U           &kp Y           &kp APOS
