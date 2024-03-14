@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define CMK 0
+#define COLEMAK 0
 #define SYM 1
 #define NUM 2
 #define FUN 3
@@ -115,6 +115,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
+
         default_layer {
             bindings = <
                                                                              &kp C_MUTE         &none
@@ -126,7 +127,9 @@
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN
                                &inc_dec_kp PG_UP PG_DN>;
-        };
+        }
+    ;
+
         sym_layer {
             bindings = <
                                                                              &trans             &trans
