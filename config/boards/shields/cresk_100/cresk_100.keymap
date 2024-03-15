@@ -46,6 +46,7 @@
     };
 
     combos {
+        compatible = "zmk,combos";
         combo_gm_capsword {
             layers = <0 1 2 3 4>;
             timeout-ms = <100>;
@@ -110,10 +111,6 @@
             bindings = <&kp Q>;
         };
     };
-};
-
-/ {
-
 
     keymap {
         compatible = "zmk,keymap";
