@@ -12,6 +12,7 @@
 #define SYM 1
 #define NUM 2
 #define NAV 3
+#define FUN 4
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
@@ -138,7 +139,7 @@
 &none            &kp BSLH             &kp PRCNT         &kp DLLR             &none              &none            &kp CARET           &kp LBRC        &kp RBRC        &kp APOS
 &kp STAR         &kp LPAR             &kp RPAR          &kp COLON            &none              &none            &kp SQT             &kp LBKT        &kp RBKT        &kp SEMI
 &mo FUN          &kp GRAVE            &kp AT            &kp AMPS             &none              &none            &kp HASH            &kp LT          &kp GT          &kp DEL                         
-                 &none                &trans                                                                                         &trans           &none
+                 &none                &trans                                                                                         &trans          &none
                                                         &trans               &kp SPACE          &kp RET          &kp ESC
             >;
         };
