@@ -124,7 +124,7 @@
 &kp A            &kp R                &kp S             &kp T                &kp G              &kp M            &kp N               &kp E           &kp I           &kp O
 &kp Z            &kp X                &kp C             &kp D                &kp V              &kp K            &kp H               &kp COMMA       &mt RALT DOT    &kp BSPC
                  &none                &kp ESC                                                                                        &kp DEL     &none
-                                                        &mo NAV              &kp SPACE          &kp RET          &mo NUM
+                                                        &mo SYM              &kp SPACE          &kp RET          &mo NUM
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN
@@ -135,11 +135,11 @@
         sym_layer {
             bindings = <
                                                                              &trans             &trans
-&kp LBRC         &kp AMPS             &kp STAR          &kp LPAR             &kp RBRC           &none            &kp L               &kp U           &kp Y           &kp APOS
-&kp COLON        &kp DLLR             &kp PERCENT       &kp CARET            &kp PLUS           &none            &kp RSHFT           &kp RCTRL       &kp RALT        &kp RMETA
-&kp TILDE        &kp EXCL             &kp AT            &kp POUND            &kp PIPE           &none            &kp LBKT            &kp RBKT        &kp LPAR        &kp RPAR 
-                 &none                &kp LBKT                                                                                       &none           &none
-                                                        &kp RBKT             &kp UNDER          &none            &none
+&none            &kp BSLH             &kp PRCNT         &kp DLLR             &none              &none            &kp CARET           &kp LBRC        &kp RBRC        &kp APOS
+&kp STAR         &kp LPAR             &kp RPAR          &kp COLON            &none              &none            &kp SQT             &kp LBKT        &kp RBKT        &kp SEMI
+&mo FUN          &kp GRAVE            &kp AT            &kp AMPS             &none              &none            &kp HASH            &kp LT          &kp GT          &kp DEL                         
+                 &none                &trans                                                                                         &trans           &none
+                                                        &trans               &kp SPACE          &kp RET          &kp ESC
             >;
         };
 
