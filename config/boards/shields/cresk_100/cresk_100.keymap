@@ -75,12 +75,12 @@
             key-positions = <23 24>;
             bindings = <&sk LCTL>;
         };
-        combo_commadot_tab {
+        combo_commadot_del {
             layers = <0 1 2 3 4>;
             timeout-ms = <100>;
             // , + . = shift
             key-positions = <29 30>;
-            bindings = <&kp TAB>;
+            bindings = <&kp DEL>;
         };
         combo_opt {
             layers = <0 1 2 3 4>;
